@@ -25,6 +25,7 @@
   display: flex;
   background-color: colors.$bg-1;
   color: white;
+  height: 4em;
 }
 .footer {
   display: flex;
@@ -47,6 +48,7 @@
   align-items: center;
   background-color: transparent;
   border: none;
+  color: white;
 }
 .btn-img-base {
   height: 100%;
@@ -71,10 +73,36 @@
   background-color: rgb(80, 80, 97);
   border-right: 1px solid black;
 }
+.view-menu-settings {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
 .view-email {
   flex-basis: 20%;
+  flex-grow: 1;
   width: 100vw;
 }
 .hidden {
   display: none;
+}
+.emails {
+  overflow-y: auto;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  padding: 1em;
+}
+.top {
+  display: flex;
+  padding-bottom: 1em;
+}
+.subject-line-container {
+  flex-basis: 80%;
+}
+.date-received-container {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-end;
 }
